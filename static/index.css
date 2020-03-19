@@ -1,0 +1,67 @@
+/* Basic css for styling */
+
+:root {
+  --dark-shade: #364553;
+  --dark-accent: #df404e;
+  --main-brand-color: #aea9af;
+  --light-accent: #e7aa5d;
+  --light-shade: #f5f6f2;
+}
+
+body {
+  background-color: var(--dark-shade);
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+}
+
+.header {
+  text-align: center;
+  color: var(--light-shade);
+  display: flex;
+  font-size: 100px;
+}
+
+h1 {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  width: 100vw;
+}
+
+.btn {
+  border: 1px solid green;
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+  padding: 25px 80px;
+  display: inline-block;
+  margin: 15px 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  outline: none;
+  position: relative;
+  background: #cb4e4e;
+  color: #fff;
+  box-shadow: 0 6px #ab3c3c;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  box-shadow: 0 4px #ab3c3c;
+  top: 2px;
+}
+
+.btn:active {
+  box-shadow: 0 0 #ab3c3c;
+  top: 6px;
+}

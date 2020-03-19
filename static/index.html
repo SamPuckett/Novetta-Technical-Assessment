@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Random Comic!</title>
+    <meta name="description" content="Novetta" />
+    <meta name="Samuel Ruiz" content="Novetta" />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./animate.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1 class="header animated slideInDown">Random Comic</h1>
+      <!-- The button bellow will call the callBackend() function that is in the 'front-end.js' file that is linked on line:26 -->
+      <button class="btn animated slideInUp" onclick="callBackend()">
+        Click for Comics!
+      </button>
+      <!-- The below div will be replaced w/ the image whenever the button above is clicked -->
+      <div id="image" class="image-location">Image Location</div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
+    <script src="front-end.js"></script>
+  </body>
+</html>
